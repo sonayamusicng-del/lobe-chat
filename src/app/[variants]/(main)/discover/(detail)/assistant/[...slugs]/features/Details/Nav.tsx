@@ -32,7 +32,7 @@ interface NavProps {
 
 const Nav = memo<NavProps>(({ mobile, setActiveTab, activeTab = AssistantNavKey.Overview }) => {
   const { t } = useTranslation('discover');
-  const { pluginCount, knowledgeCount, identifier } = useDetailContext();
+  const { pluginCount, knowledgeCount } = useDetailContext();
   const { styles } = useStyles();
 
   const capabilitiesCount = Number(pluginCount) + Number(knowledgeCount);
