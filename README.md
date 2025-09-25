@@ -4,6 +4,7 @@
 
 # imoogleAI
 
+An advanced chatbot developed by Imoogle Technology, founded by Olajuwon (known as sidicode or tariq) and developed in Nigeria, Ilorin.<br/>
 An open-source, modern design ChatGPT/LLMs UI/framework.<br/>
 Supports speech synthesis, multi-modal, and extensible plugin system.<br/>
 One-click **FREE** deployment of your private OpenAI ChatGPT/Claude/Gemini/Groq/Ollama chat application.

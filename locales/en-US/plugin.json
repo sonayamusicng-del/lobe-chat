@@ -328,7 +328,7 @@
     "custom": {
       "badge": "Custom Plugin",
       "security": {
-        "description": "This plugin is not officially verified, installation may pose security risks! Please ensure you trust the plugin source.",
+        "description": "This plugin is not Imoogle verified, installation may pose security risks! Please ensure you trust the plugin source.",
         "title": "⚠️ Security Risk Warning"
       },
       "title": "Install Custom Plugin"
@@ -340,7 +340,7 @@
         "title": "Unverified Third-Party Plugin",
         "warning": "This plugin comes from an unverified third-party marketplace. Please confirm you trust the source before installation."
       },
-      "verified": "Verified"
+      "verified": "Imoogle Verified"
     },
     "messages": {
       "connectionTestFailed": "Connection test failed",

@@ -15,9 +15,7 @@ import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
-import urlJoin from 'url-join';
 
-import { SOCIAL_URL } from '@/const/branding';
 import { useToolStore } from '@/store/tool';
 import { pluginSelectors } from '@/store/tool/selectors';
 import { McpNavKey } from '@/types/discover';
@@ -167,27 +165,7 @@ const Nav = memo<NavProps>(
     ) : (
       <Flexbox align={'center'} className={styles.nav} horizontal justify={'space-between'}>
         {nav}
-        {!inModal && (
-          <Flexbox gap={12} horizontal>
-            <Link className={styles.link} href={SOCIAL_URL.discord} target={'_blank'}>
-              {t('mcp.details.nav.needHelp')}
-            </Link>
-            {github?.url && (
-              <>
-                <Link className={styles.link} href={github.url} target={'_blank'}>
-                  {t('mcp.details.nav.viewSourceCode')}
-                </Link>
-                <Link
-                  className={styles.link}
-                  href={urlJoin(github.url, 'issues')}
-                  target={'_blank'}
-                >
-                  {t('mcp.details.nav.reportIssue')}
-                </Link>
-              </>
-            )}
-          </Flexbox>
-        )}
+
       </Flexbox>
     );
   },
