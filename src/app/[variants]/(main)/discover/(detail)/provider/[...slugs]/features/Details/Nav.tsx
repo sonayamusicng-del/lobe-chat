@@ -3,13 +3,9 @@
 import { Icon, Tabs } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { BookOpenIcon, BrainCircuitIcon, ListIcon } from 'lucide-react';
-import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
-import urlJoin from 'url-join';
-
-import { SOCIAL_URL } from '@/const/branding';
 import { ProviderNavKey } from '@/types/discover';
 
 import { useDetailContext } from '../DetailProvider';
@@ -70,30 +66,7 @@ const Nav = memo<NavProps>(({ mobile, setActiveTab, activeTab = ProviderNavKey.O
   ) : (
     <Flexbox align={'center'} className={styles.nav} horizontal justify={'space-between'}>
       {nav}
-      <Flexbox gap={12} horizontal>
-        <Link className={styles.link} href={SOCIAL_URL.discord} target={'_blank'}>
-          {t('mcp.details.nav.needHelp')}
-        </Link>
-        {identifier && (
-          <Link
-            className={styles.link}
-            href={urlJoin(
-              'https://github.com/lobehub/lobe-chat/tree/main/src/config/modelProviders',
-              `${identifier}.ts`,
-            )}
-            target={'_blank'}
-          >
-            {t('mcp.details.nav.viewSourceCode')}
-          </Link>
-        )}
-        <Link
-          className={styles.link}
-          href={'https://github.com/lobehub/lobe-chat/issues/new/choose'}
-          target={'_blank'}
-        >
-          {t('mcp.details.nav.reportIssue')}
-        </Link>
-      </Flexbox>
+
     </Flexbox>
   );
 });

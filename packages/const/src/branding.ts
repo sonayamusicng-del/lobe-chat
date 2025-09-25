@@ -17,10 +17,10 @@ export const BRANDING_URL = {
 
 export const SOCIAL_URL = {
   discord: 'https://discord.gg/AYFPHvv2jT',
-  github: 'https://github.com/lobehub',
-  medium: 'https://medium.com/@lobehub',
-  x: 'https://x.com/lobehub',
-  youtube: 'https://www.youtube.com/@lobehub',
+  github: 'https://github.com/imoogleai',
+  medium: 'https://medium.com/@imoogleai',
+  x: 'https://x.com/imoogleai',
+  youtube: 'https://www.youtube.com/@imoogleai',
 };
 
 export const BRANDING_EMAIL = {

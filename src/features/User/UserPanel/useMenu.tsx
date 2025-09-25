@@ -8,7 +8,6 @@ import {
   Cloudy,
   Download,
   Feather,
-  FileClockIcon,
   HardDriveDownload,
   LifeBuoy,
   LogOut,
@@ -22,10 +21,9 @@ import { Flexbox } from 'react-layout-kit';
 
 import type { MenuProps } from '@/components/Menu';
 import { enableAuth } from '@/const/auth';
-import { BRANDING_EMAIL, LOBE_CHAT_CLOUD, SOCIAL_URL } from '@/const/branding';
+import { BRANDING_EMAIL, LOBE_CHAT_CLOUD } from '@/const/branding';
 import { DEFAULT_DESKTOP_HOTKEY_CONFIG } from '@/const/desktop';
 import {
-  CHANGELOG,
   DOCUMENTS_REFER_URL,
   GITHUB_ISSUES,
   OFFICIAL_URL,
@@ -140,11 +138,7 @@ export const useMenu = () => {
         </Link>
       ),
     },
-    {
-      icon: <Icon icon={FileClockIcon} />,
-      key: 'changelog',
-      label: <Link href={isDesktop ? CHANGELOG : '/changelog/modal'}>{t('changelog')}</Link>,
-    },
+
     {
       children: [
         {

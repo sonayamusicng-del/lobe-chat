@@ -3,12 +3,9 @@
 import { Icon, Tabs } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { BookOpenIcon, ListIcon, Settings2Icon } from 'lucide-react';
-import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
-
-import { SOCIAL_URL } from '@/const/branding';
 import { ModelNavKey } from '@/types/discover';
 
 const useStyles = createStyles(({ css, token }) => {
@@ -66,25 +63,7 @@ const Nav = memo<NavProps>(({ mobile, setActiveTab, activeTab = ModelNavKey.Over
   ) : (
     <Flexbox align={'center'} className={styles.nav} horizontal justify={'space-between'}>
       {nav}
-      <Flexbox gap={12} horizontal>
-        <Link className={styles.link} href={SOCIAL_URL.discord} target={'_blank'}>
-          {t('mcp.details.nav.needHelp')}
-        </Link>
-        <Link
-          className={styles.link}
-          href={'https://github.com/lobehub/lobe-chat/tree/main/src/config/aiModels'}
-          target={'_blank'}
-        >
-          {t('mcp.details.nav.viewSourceCode')}
-        </Link>
-        <Link
-          className={styles.link}
-          href={'https://github.com/lobehub/lobe-chat/issues/new/choose'}
-          target={'_blank'}
-        >
-          {t('mcp.details.nav.reportIssue')}
-        </Link>
-      </Flexbox>
+
     </Flexbox>
   );
 });
