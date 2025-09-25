@@ -33,7 +33,6 @@ interface NavProps {
 
 const Nav = memo<NavProps>(({ mobile, setActiveTab, activeTab = ProviderNavKey.Overview }) => {
   const { t } = useTranslation('discover');
-  const { identifier } = useDetailContext();
   const { styles } = useStyles();
 
   const nav = (
